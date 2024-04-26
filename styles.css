@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.mensaje, #imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.oculto {
+    display: none;
+}
+
+.hidden {
+    opacity: 1; /* Cambiado de 0 a 1 */
+    transition: opacity 3s;
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none;
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espacio alrededor del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #4CAF50; /* Borde */
+    transition-duration: 0.4s; /* Duración de la transición */
+}
+
+button:hover {
+    background-color: white; /* Cambio de color de fondo al pasar por encima */
+    color: #4CAF50; /* Cambio de color del texto al pasar por encima */
+}
+#frase {
+    font-size: 20px; /* Tamaño del texto */
+    font-style: italic; /* Estilo del texto */
+    color: #333; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Espacio alrededor del texto */
+    background-color: #f8f8f8; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
